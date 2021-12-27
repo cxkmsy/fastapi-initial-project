@@ -1,8 +1,0 @@
-uvicorn
-fastapi
-pydantic
-sqlalchemy
-pymysql
-passlib
-bcrypt
-python-jose
