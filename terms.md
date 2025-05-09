@@ -1,3 +1,4 @@
+#2205308010313 李念毅
 # 术语词汇表 | Glossary
 
 | 中文术语 | English Term | 说明 / Description |
@@ -10,3 +11,5 @@
 | 依赖注入 | Dependency Injection | 自动解析和注入依赖项的设计模式 / Design pattern for automatic dependency resolution |
 | CRUD操作 | CRUD Operations | 创建、读取、更新、删除基本操作 / Create, Read, Update, Delete basic operations |
 | JWT令牌 | JWT Token | JSON Web Token用于安全传输信息 / JSON Web Token for secure information transfer |
+
+
