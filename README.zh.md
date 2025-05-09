@@ -59,3 +59,16 @@ passlib	密码哈希	>=1.7.4
 bcrypt	哈希算法	>=4.0.1
 
 <!-- by wenliangfeng -->
+
+# 安全规范
+
+# 密码安全策略
+# 密码强度要求示例
+def validate_password(password):
+    return (
+        len(password) >= 8 and
+        any(c.isupper() for c in password) and
+        any(c.isdigit() for c in password)
+    )
+
+ <!-- by wenliangfeng -->

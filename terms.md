@@ -1,3 +1,4 @@
+<!-- by wenliangfeng -->
 | 英文术语 | 中文翻译 | 定义说明 |
 |---------|---------|---------|
 | JWT (JSON Web Token) | JSON网络令牌 | RFC 7519标准的加密令牌格式，用于安全传输声明 |
@@ -11,3 +12,15 @@
 | Token Expiration | 令牌有效期 | JWT令牌的有效时间周期 |
 | Salt | 盐值 | 密码哈希过程中添加的随机数据 |
 | Stateless Authentication | 无状态认证 | 不依赖服务端会话的认证机制 |
+
+<!-- by wenliangfeng -->
+# 安全扩展术语
+| 英文术语 | 中文翻译 | 应用场景 |
+|---------|---------|---------|
+| Refresh Token | 刷新令牌 | 用于获取新访问令牌 |
+| CSRF Protection | CSRF防护 | 防止跨站请求伪造 |
+| CORS | 跨域资源共享 | API跨域访问控制 |
+| PBKDF2 | 密码派生函数 | 替代Bcrypt的算法 |
+| Rate Limiting | 速率限制 | 防止暴力破解 |
+
+<!-- by wenliangfeng -->
