@@ -1,3 +1,4 @@
+<--! 黄成臻 -->
 面向对象设计模式 / Object-Oriented design pattern
 
 JWT认证系统 / JWT Authentication system
@@ -49,3 +50,5 @@ Pydantic模型 / Pydantic schemas
 配置文件 / Configuration settings
 
 测试用例 / Test cases
+
+<--! 黄成臻 -->
