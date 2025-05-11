@@ -1,11 +1,4 @@
-FastApi 最佳实践模式
-带有身份验证和错误处理的 FastApi 框架最佳面向对象模式
-创建一个虚拟环境，然后运行 pip install -r requirements.txt 安装依赖项。
-创建一个空数据库（项目中的默认名称为 test_db）。
-根据你的 MySQL 凭证修改 app/config.py。
-在命令行中运行 uvicorn main:app --reload。
-在浏览器中打开 http://127.0.0.1:8000/docs。
-
+<!--by bantingrui 2205308010349-->
 FastAPI 模型模块(models（作者：班庭锐 2205308010349）
 该模块定义了 FastAPI 项目中使用的核心数据模型，涵盖了与项目和用户相关的数据结构。
 
@@ -98,4 +91,4 @@ orm_mode = True
 from typing import Optional
 class TokenData(BaseModel):
 email: Optional[str] = None
-（作者：班庭锐 2205308010349）
+<!--by bantingrui 2205308010349-->
