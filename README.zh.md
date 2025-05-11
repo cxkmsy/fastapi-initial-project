@@ -6,7 +6,7 @@ FastApi 最佳实践模式
 在命令行中运行 uvicorn main:app --reload。
 在浏览器中打开 http://127.0.0.1:8000/docs。
 
-FastAPI 模型模块(models（作者：班庭锐）
+FastAPI 模型模块(models（作者：班庭锐 2205308010349）
 该模块定义了 FastAPI 项目中使用的核心数据模型，涵盖了与项目和用户相关的数据结构。
 
 ✨ 特性
@@ -98,3 +98,4 @@ orm_mode = True
 from typing import Optional
 class TokenData(BaseModel):
 email: Optional[str] = None
+（作者：班庭锐 2205308010349）
