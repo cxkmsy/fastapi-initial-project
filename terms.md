@@ -1,3 +1,4 @@
+<!--------------------------------------------- by2205308010333徐济艺 ------------------------------------------------------------->
 1. FastAPI
 - 定义：一个基于 Python 的现代高性能 Web 框架，用于快速构建 API，支持异步编程、自动生成交互式文档（Swagger/OpenAPI）和严格的类型提示。
 项目应用：本项目基于 FastAPI 搭建，控制器模块（controllers）通过 FastAPI 的依赖注入和路由系统，实现对用户和项目资源的 RESTful 接口管理。
@@ -16,6 +17,8 @@
 6. 依赖注入（Dependency Injection）
 - 定义：一种设计模式，通过将依赖（如数据库会话、配置对象）传递给函数或类，而非硬编码，提高代码的松耦合性和可测试性。
 项目应用：FastAPI 原生支持依赖注入，控制器函数（如 get_all(db: Session)）通过参数声明依赖（如 db: Session），框架会自动解析并注入数据库会话，简化资源管理。
+<!--------------------------------------------- by2205308010333徐济艺 ------------------------------------------------------------->
+
 
 1. FastAPI
 - Definition: A modern, high-performance Python-based Web framework for rapidly building APIs. It supports asynchronous programming, automatic generation of interactive documentation (Swagger/OpenAPI), and strict type hints.
@@ -35,3 +38,4 @@ Project application: In this project, the database table structure is defined th
 6. Dependency Injection
 - Definition: A design pattern that passes dependencies (e.g., database sessions, configuration objects) to functions or classes instead of hard - coding them, improving code decoupling and testability.
 Project application: FastAPI natively supports dependency injection. Controller functions (e.g., get_all(db: Session)) declare dependencies (e.g., db: Session) through parameters, and the framework automatically resolves and injects the database session, simplifying resource management.
+<!--------------------------------------------- by2205308010333徐济艺 ------------------------------------------------------------->
