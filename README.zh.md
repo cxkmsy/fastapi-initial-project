@@ -1,4 +1,162 @@
 
+<!--------------------------------------------- by2205308010333徐济艺 ------------------------------------------------------------->
+
+# FastAPI 初始项目 - 控制器模块介绍
+
+本项目是一个基于 FastAPI 的初始项目，控制器模块（controllers）主要负责处理业务逻辑，包括项目（projects）和用户（users）相关的操作。
+
+## ✨ 项目特点
+
+- 提供项目和用户的增删改查操作。
+- 对数据库操作进行异常处理，提高系统稳定性。
+- 支持用户登录和 JWT 令牌验证
+
+## 🚀 快速开始
+
+### 克隆项目
+
+git clone [你的项目仓库地址]
+cd [项目文件夹名]
+
+### 安装依赖
+
+pip install -r requirements.txt
+
+### 启动项目
+
+uvicorn main:app --reload
+
+项目将运行在 http://localhost:8000
+
+## 📦 项目结构
+fastapi-initial-project-master/
+├── app/
+│   ├── controllers/
+│   │   ├── projects.py  # 项目相关控制器
+│   │   └── users.py     # 用户相关控制器
+│   ├── helpers/
+│   ├── middlewares/
+│   ├── models/
+│   ├── routers/
+│   └── schemas/
+└── ...
+
+## 📮 项目主要功能说明与截图
+一、用户管理功能（对应users.py）
+
+- 用户注册(create 函数)
+  功能对应：接收用户注册请求，加密密码后存入数据库。
+
+![用户注册代码截图](images/1.png)
+
+
+- 用户登录（login 函数）
+  功能对应：验证用户邮箱和密码，生成并返回 JWT 认证令牌。
+
+![用户登录代码截图](images/2.png)
+
+- 查询单个用户（get_one 函数）
+  功能对应：根据用户 ID 查询用户详情，未找到时返回 404 错误。
+
+![查询单个用户代码截图](images/3.png)
+
+- 更新用户信息（update 函数）
+  功能对应：支持更新用户信息（包括密码，自动加密），未找到用户时返回 404 错误。
+  ![更新用户信息代码截图](images/4.png)
+
+- 删除用户（destroy 函数）
+  功能对应：根据用户 ID 删除用户，未找到时返回 404 错误。
+  ![删除用户代码截图](images/5.png)
+
+  二、项目管理功能（对应 projects.py）
+
+- 创建项目（create 函数）
+  功能对应：创建新项目，强制关联 user_id（确保每个项目属于特定用户）。
+  ![创建项目代码截图](images/6.png)
+
+- 查询所有项目（get_all 函数）
+  功能对应：返回数据库中所有项目记录（实际使用时可能需结合用户 ID 过滤，当前代码未体现，可在文档中说明 “需结合认证逻辑过滤当前用户的项目”）。
+  ![查询所有项目代码截图](images/7.png)
+
+- 查询单个项目（get_one 函数）
+  功能对应：根据项目 ID 查询详情，未找到时返回 404 错误。
+  ![查询单个项目代码截图](images/8.png)
+
+- 更新项目（update 函数）
+  功能对应：根据项目 ID 更新信息，未找到时返回 404 错误。
+  ![更新项目代码截图](images/9.png)
+
+- 删除项目（destroy 函数）
+  功能对应：根据项目 ID 删除项目，未找到时返回 404 错误。
+  ![删除项目代码截图](images/10.png)
+
+三、认证机制（对应 users.py）
+
+- JWT 令牌生成（create_access_token 函数）
+  功能对应：生成带有过期时间的 JWT 令牌，用于用户认证。
+  ![JWT 令牌生成代码截图](images/11.png)
+
+- JWT 令牌验证（verify_token 函数）
+  功能对应：验证 JWT 令牌的有效性，提取用户邮箱用于权限验证。
+  ![JWT 令牌验证代码截图](images/12.png)
+  <!--------------------------------------------- by2205308010333徐济艺 ------------------------------------------------------------->
+=======
+
+#2205308010313 李念毅
+# FastApi_best_practice_pattern
+
+### Best Object-Oriented pattern for FastApi framework with Authentication and error handling  
+
+- Create a Virtual Environment and run `pip install -r requirements.txt` to install the dependencies.
+- Create an empty database (default name in the project is `test_db`).
+- Change the app/config.py based on your MySql credential.
+- Run `uvicorn main:app --reload` in command line.
+- Open `http://127.0.0.1:8000/docs` in the browser.
+
+# FastAPI 项目路由模块
+
+本模块包含项目的主要API路由定义，包括用户管理和项目管理功能。
+
+## 🚀 功能特性
+
+- 👥 完整的用户认证系统（登录/注册）
+- 🔐 基于JWT的权限控制
+- 📦 项目管理CRUD操作
+- 🛡️ 路由级权限校验
+
+## 📂 文件结构
+router/
+├── init.py # 包初始化文件
+├── index.py # 路由加载入口
+├── projects.py # 项目相关路由
+└── users.py # 
+
+
+## 🛠️ 路由说明
+![项目界面截图](images/users3.png)
+### 用户路由 (/user)
+- `GET /user` - 获取所有用户列表 (需认证)
+- `POST /user` - 创建新用户
+- `GET /user/{id}` - 获取指定用户详情 (需认证)
+- `PUT /user/{id}` - 更新用户信息 (需认证)
+- `DELETE /user/{id}` - 删除用户 (需认证)
+- `POST /user/login` - 用户登录 (获取访问令牌)
+
+![项目界面截图](images/projects3.png)
+### 项目路由 (/project)
+- `GET /project` - 获取所有项目列表 (需认证)
+- `POST /project` - 创建新项目 (需认证)
+- `GET /project/{id}` - 获取指定项目详情 (需认证)
+- `PUT /project/{id}` - 更新项目信息 (需认证)
+- `DELETE /project/{id}` - 删除项目 (需认证)
+
+## � 开发指南
+
+1. 添加新路由文件时，需在`index.py`中注册
+2. 使用`APIRouter`的`dependencies`参数添加路由级中间件
+3. 响应模型统一使用`app.models`中定义的模型
+#2205308010313 李念毅
+
 <!-- by wenliangfeng -->
 
 # 克隆项目:
@@ -59,7 +217,6 @@ python-jose	JWT实现	>=3.3.0
 passlib	密码哈希	>=1.7.4
 bcrypt	哈希算法	>=4.0.1
 
-<!-- by wenliangfeng -->
 
 # 安全规范
 
