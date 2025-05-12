@@ -1,4 +1,5 @@
 
+
 <--! 黄成臻 -->
 面向对象设计模式 / Object-Oriented design pattern
 
@@ -54,6 +55,60 @@ Pydantic模型 / Pydantic schemas
 
 <--! 黄成臻 -->
 
+<!--by bantingrui 2205308010349-->
+项目	Project
+用户	User
+创建	Create
+更新	Update
+数据模型	Data Model
+初始化文件	Initialization File
+令牌	Token
+登录	Login
+ORM 模式	ORM Mode
+基础模型	Base Model
+继承	Inheritance
+可选字段	Optional Field
+唯一标识	Unique Identifier
+Pydantic 库	Pydantic Library
+数据验证	Data Validation
+类型提示	Type Hints
+访问令牌	Access Token
+令牌类型	Token Type
+响应式编程	Reactive Programming
+后端开发	Back-end Development
+应用程序接口	Application Programming Interface (API)
+数据库交互	Database Interaction
+<!--by bantingrui 2205308010349-->
+
+<!--张振锟-->
+以下是middlewares文件夹代码与main.py所涉及的词汇
+
+| 英文术语                         | 中文术语                   |
+|----------------------------------|---------------------------|
+| **认证与安全**                   |                          |
+| OAuth2                          | OAuth2 认证协议          |
+| JWT Token                       | JSON Web 令牌            |
+| Bearer Token                    | 持有者令牌                |
+| HTTP 401 Unauthorized           | HTTP 401 未授权状态码    |
+| **Web 开发**                     |                          |
+| FastAPI                         | FastAPI 框架             |
+| CORS                            | 跨域资源共享             |
+| Middleware                      | 中间件                   |
+| RESTful API                     | RESTful 接口             |
+| **Python 技术栈**                |                          |
+| Pydantic Model                  | Pydantic 数据模型        |
+| ORM                             | 对象关系映射             |
+| Dependency Injection            | 依赖注入                 |
+| ASGI                            | 异步服务器网关接口       |
+| **部署与架构**                   |                          |
+| Uvicorn                         | Uvicorn 服务器           |
+| Production-grade Deployment     | 生产级部署               |
+| **工程化结构**                   |                          |
+| `__init__.py`                   | Python 包标识文件        |
+| Modular Development             | 模块化开发               |
+<!--张振锟-->
+
+
 <!-- by 2205308010338蒙思勇 -->
 英文词汇	    中文翻译
 sqlalchemy	    SQLAlchemy（一个Python的SQL工具包和对象关系映射工具）
@@ -92,4 +147,5 @@ import	        导入 (用于导入模块)
 class	        类
 def	            定义 (用于定义一个函数)
 <!-- by 2205308010338蒙思勇 -->
+
 
